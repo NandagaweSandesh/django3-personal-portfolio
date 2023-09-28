@@ -1,1 +1,11 @@
+{% extends 'portfolio/base.html' %}
+
+{% block content %}
+
+<a href="{% url 'blog:all_blogs' %}"><h1>Back to Blog</h1></a>
+
+<!-- <a href="{% url 'home' %}"><h1>Home</h1></a> -->
+
 {{blog.title}}
+
+{% endblock %}

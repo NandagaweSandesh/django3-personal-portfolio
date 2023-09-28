@@ -1,4 +1,11 @@
+{% extends 'portfolio/base.html' %}
+
+{% block content %}
+
 {% load static %}
+
+<a href="{% url 'blog:all_blogs' %}"><h2>Blog</h2></a>
+<br>
 
 <img src="{% static 'portfolio/image_1.jpeg' %}" alt="", height="300">
 
@@ -14,3 +21,5 @@
 
 {% endfor %}
     
+
+{% endblock %}
